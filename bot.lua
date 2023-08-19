@@ -6,11 +6,11 @@ client:on("ready", function()
 end)
 
 client:on('memberJoin', function(member)
-    client:getChannel('1035291481927319552'):send{
+    client:getChannel('ID CANAL'):send{
         embed = {
-            title = "Bem-vinde " .. member.tag .. "!",
+            title = "Bem-vindo(a) " .. member.tag .. "!",
             thumbnail = member.avatarURL,
-            description = "ao fvckin crazy server",
+            description = "Descrição",
             thumbnail = {
                 url = member.avatarURL,
                 height = 50,
@@ -21,7 +21,7 @@ client:on('memberJoin', function(member)
                 icon_url = member.avatarURL
             },
             footer = {
-                text = "feito pela juli winner!!!"
+                text = "Rodapé"
             },
             color = discordia.Color.fromHex('#00ff00').value 
         }
@@ -29,11 +29,11 @@ client:on('memberJoin', function(member)
 end)
 
 client:on('memberLeave', function(member)
-    client:getChannel('1035291481927319552'):send{
+    client:getChannel('ID CANAL'):send{
         embed = {
             title = "Adeus " .. member.tag .. ".",
             thumbnail = member.avatarURL,
-            description = "seu merda lixo otario",
+            description = "Descrição",
             thumbnail = {
                 url = member.avatarURL,
                 height = 50,
@@ -44,7 +44,7 @@ client:on('memberLeave', function(member)
                 icon_url = member.avatarURL
             },
             footer = {
-                text = "feito pela juli winner!!!"
+                text = "Rodapé"
             },
             color = discordia.Color.fromHex('#ff0000').value 
         }
